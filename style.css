@@ -5,7 +5,7 @@
 }
 body {
   background-color: #fffef4;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #343a40;
   font-size: 12px;
   height: 100vh;
@@ -14,7 +14,7 @@ body {
 
   display: grid;
   grid-template-columns: 220px 1fr;
-  grid-template-rows: 32px 1fr 10px;
+  grid-template-rows: 10px 1fr 10px;
 }
 
 aside {
@@ -27,6 +27,34 @@ aside {
 
 aside .profile-title {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .profile-title .socials i {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #fffef4;
+  padding: 0px 2px;
+}
+
+aside .profile-title .contacts {
+  margin-top: 10px;
+  font-size: 10px;
+  display: flex; 
+  flex-direction: column; 
+  text-align: left;
+  justify-content: center;
+  align-items: left;
+}
+
+aside .profile-title .contacts i {
+  font-size: 10px;
+  color: #fffef4;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 aside img {
@@ -34,10 +62,30 @@ aside img {
   border-radius: 100px;
 }
 
-nav {
+aside .profile-info {
+  margin-top: 10px;
+}
+
+.btn-resume {
+  margin-top: 10px;
+  font-family: inherit;
+  background-color: #fffef4;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 3px;
+}
+
+.btn-resume:hover {
+  background-color: #fffef4be;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* nav {
   background-color: #343a40;
   grid-column: 1 / -1;
-}
+} */
 
 section {
   background-color: #93c572;
@@ -47,7 +95,32 @@ section {
   padding: 10px;
 }
 
+section .info-card {
+  margin-top: 10px;
+  background-color: #fffef4;
+  border-radius: 10px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .info-card .title {
+  text-align: left;
+}
+
+section .project {
+  background-color: midnightblue;
+  width: 100%;
+  height: 100px;
+}
+
+
 footer {
   grid-column: 1 / -1;
   grid-row: -1;
+
+  font-size: 8px;
 }
