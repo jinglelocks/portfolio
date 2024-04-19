@@ -13,7 +13,7 @@ body {
   font-weight: bold;
 
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 250px 1fr;
   grid-template-rows: 10px 1fr 10px;
 }
 
@@ -42,7 +42,7 @@ aside .profile-title .socials i {
 
 aside .profile-info .contacts {
   margin-top: 10px;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -63,6 +63,7 @@ aside img {
 }
 
 aside .profile-info {
+  font-size: 14px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -92,6 +93,7 @@ aside .profile-info {
 } */
 
 section {
+  font-size: 14px;
   background-color: #93c572;
   grid-row: 2 /-1;
   border-radius: 10px;
@@ -120,6 +122,48 @@ section .project {
   height: 100px;
 }
 
+section .category-buttons {
+  width: 350px;
+  min-width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px;
+  justify-content: center;
+}
+
+section .btn-category {
+  font-size: 18px;
+  font-family: inherit;
+  border: 4px solid #fffef4;
+  background-color: #fffef4;
+}
+
+section .btn-category:hover {
+  border-bottom: 4px solid #93c572;
+  border-top: 4px solid #fffef4;
+  transition: 0.5s;
+}
+
+section .web-dev {
+  display: none;
+  visibility: hidden;
+}
+
+section .web-dev-selected {
+  display: block;
+  visibility: visible;
+}
+
+section .spatial-analysis {
+  display: none;
+}
+section .automation {
+  display: none;
+}
+section .data-mgmt {
+  display: none;
+}
+
 footer {
   grid-column: 1 / -1;
   grid-row: -1;
@@ -129,6 +173,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   body {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
   }
