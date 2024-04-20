@@ -144,14 +144,15 @@ section .btn-category:hover {
   transition: 0.5s;
 }
 
+section .btn-selected {
+  border-bottom: 4px solid #93c572;
+  border-top: 4px solid #fffef4;
+  transition: 0.5s;
+}
+
 section .content-web-dev {
   display: none;
   visibility: hidden;
-}
-
-section .web-dev-selected {
-  display: block;
-  visibility: visible;
 }
 
 section .content-spatial {
@@ -162,6 +163,11 @@ section .content-automation {
 }
 section .content-mgmt {
   display: none;
+}
+
+section .content-selected {
+  display: block;
+  visibility: visible;
 }
 
 footer {
