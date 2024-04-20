@@ -144,7 +144,7 @@ section .btn-category:hover {
   transition: 0.5s;
 }
 
-section .web-dev {
+section .content-web-dev {
   display: none;
   visibility: hidden;
 }
@@ -154,13 +154,13 @@ section .web-dev-selected {
   visibility: visible;
 }
 
-section .spatial-analysis {
+section .content-spatial {
   display: none;
 }
-section .automation {
+section .content-automation {
   display: none;
 }
-section .data-mgmt {
+section .content-mgmt {
   display: none;
 }
 
