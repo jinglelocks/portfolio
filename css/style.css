@@ -189,8 +189,8 @@ section .info-card .project-content {
 }
 
 section .project {
-  width: 500px;
-  height: 180px;
+  /* width: 500px; */
+  /* height: 180px; */
   border-radius: 10px;
   background-color: #fffef4;
   margin: 10px;
