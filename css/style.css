@@ -123,11 +123,11 @@ section .info-card {
 }
 
 section .category-buttons {
-  width: 350px;
-  min-width: 350px;
+  width: auto;
+  min-width: 200px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px
   justify-content: center;
 }
 
@@ -223,7 +223,9 @@ section .project {
 }
 
 section .project img {
-  border: 3px solid rgb(58, 58, 58);
+  /* border: 2px solid rgb(58, 58, 58); */
+  background-color: #fffef4;
+  border: 1.5px solid #1a2215;
   border-radius: 5px;
   width: 120px;
   height: 120px;
@@ -299,5 +301,10 @@ footer {
 
   section .project {
     width: 300px;
+  }
+
+  section .category-buttons {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px;
   }
 }
