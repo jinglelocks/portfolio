@@ -17,9 +17,11 @@ body {
   grid-template-rows: 10px 1fr 10px;
 }
 
+/* Contact side-bar (aside) ---- */
+
 aside {
   background-color: #93c572;
-  grid-row: 2 /-1;
+  grid-row: 2;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 10px;
@@ -92,10 +94,12 @@ aside .profile-info {
   grid-column: 1 / -1;
 } */
 
+/* Main section (for about me and project info) ---- */
+
 section {
   font-size: 14px;
   background-color: #93c572;
-  grid-row: 2 /-1;
+  grid-row: 2;
   border-radius: 10px;
   margin: 20px 10px;
   padding: 10px;
@@ -116,12 +120,6 @@ section .info-card {
   align-items: center;
 }
 
-section .project {
-  background-color: midnightblue;
-  width: 100%;
-  height: 100px;
-}
-
 section .category-buttons {
   width: 350px;
   min-width: 350px;
@@ -135,6 +133,7 @@ section .btn-category {
   font-size: 18px;
   font-family: inherit;
   border: 4px solid #fffef4;
+  border-radius: 5px;
   background-color: #fffef4;
 }
 
@@ -158,9 +157,11 @@ section .content-web-dev {
 section .content-spatial {
   display: none;
 }
+
 section .content-automation {
   display: none;
 }
+
 section .content-mgmt {
   display: none;
 }
@@ -170,12 +171,54 @@ section .content-selected {
   visibility: visible;
 }
 
+section .info-card .project-content {
+  background-color: #93c572;
+  width: 600px;
+  border-radius: 10px;
+
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .project {
+  width: 500px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: #fffef4;
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+section .project img {
+  background-color: grey;
+  border: 3px solid rgb(58, 58, 58);
+  border-radius: 5px;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+section .project .project-info {
+  text-align: left;
+  padding: 10px;
+}
+
+/* Footer section ---- */
+
 footer {
   grid-column: 1 / -1;
   grid-row: -1;
 
   font-size: 8px;
 }
+
+/* Media queries for responsive design ---- */
 
 @media only screen and (max-width: 768px) {
   body {

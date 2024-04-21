@@ -1,46 +1,65 @@
-const btnWebDev = document.getElementById('btn-web-dev');
-const btnSpatial = document.getElementById('btn-spatial');
-const btnAutomation = document.getElementById('btn-automation');
-const btnMgmt = document.getElementById('btn-mgmt');
+/* ----
+Portfolio website styling and functionality v1.0.0
+April 2024
+---- */
 
-const contentWebDev = document.querySelector('.content-web-dev');
-const contentSpatial = document.querySelector('.content-spatial');
-const contentAutomation = document.querySelector('.content-automation');
-const contentMgmt = document.querySelector('.content-mgmt');
+// Variables ----
 
-let contentVisible = false;
+const btnWebDev = document.getElementById("btn-web-dev");
+const btnSpatial = document.getElementById("btn-spatial");
+const btnAutomation = document.getElementById("btn-automation");
+const btnMgmt = document.getElementById("btn-mgmt");
+
+const contentWebDev = document.querySelector(".content-web-dev");
+const contentSpatial = document.querySelector(".content-spatial");
+const contentAutomation = document.querySelector(".content-automation");
+const contentMgmt = document.querySelector(".content-mgmt");
+
+// Arrays ----
+
+let contentArray = [
+  contentWebDev,
+  contentSpatial,
+  contentAutomation,
+  contentMgmt,
+];
+
+let buttonArray = [btnWebDev, btnSpatial, btnAutomation, btnMgmt];
+
+// Functions----
 
 function contentSwitch(e) {
+  e.preventDefault()
+  let button = e.target;
+  let buttonID = e.target.id;
   let content;
-  let target = e.target.id;
 
-  if (target === 'btn-web-dev') {
+  if (buttonID === "btn-web-dev") {
     content = contentWebDev;
-  } else if (target === 'btn-spatial') {
-    content = contentSpatial
-  } else if (target === 'btn-automation') {
-    content = contentAutomation
-  } else if (target === 'btn-mgmt') {
-    content = contentMgmt
-  };
+  } else if (buttonID === "btn-spatial") {
+    content = contentSpatial;
+  } else if (buttonID === "btn-automation") {
+    content = contentAutomation;
+  } else if (buttonID === "btn-mgmt") {
+    content = contentMgmt;
+  }
 
-  toggleDiv(content, e.target);
-};
+  toggleDiv(content, button);
+}
 
-function toggleDiv(content, target) {
-    let contentArray = [contentWebDev, contentSpatial, contentAutomation, contentMgmt]
-    let buttonArray = [btnWebDev, btnSpatial, btnAutomation, btnMgmt]
-    for (let i = 0; i < contentArray.length; i++) {
-      // if (contentArray[i].classList.contains('content-selected')) {
-        contentArray[i].classList.remove('content-selected')
-        buttonArray[i].classList.remove('btn-selected')
-      // };
-    };
-    content.classList.add('content-selected');
-    target.classList.add('btn-selected')
-  };
+function toggleDiv(content, button) {
+  for (let i = 0; i < contentArray.length; i++) {
+    contentArray[i].classList.remove("content-selected");
+    buttonArray[i].classList.remove("btn-selected");
+  }
+  content.classList.add("content-selected");
+  button.classList.add("btn-selected");
+}
 
-btnWebDev.addEventListener('click', contentSwitch);
-btnSpatial.addEventListener('click', contentSwitch);
-btnAutomation.addEventListener('click', contentSwitch);
-btnMgmt.addEventListener('click', contentSwitch);
+function init() {
+  for (let i = 0; i < buttonArray.length; i++) {
+    buttonArray[i].addEventListener("click", contentSwitch);
+  }
+}
+
+init();
