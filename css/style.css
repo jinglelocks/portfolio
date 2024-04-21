@@ -151,6 +151,23 @@ section .btn-selected {
   transition: 0.5s;
 }
 
+section .info-card .project-content {
+  background-color: #93c572;
+  /* width: 600px; */
+  border-radius: 10px;
+  width: 100%;
+
+  /* margin: 10px; */
+  padding: 0px 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 section .content-web-dev {
   display: none;
   visibility: hidden;
@@ -169,27 +186,18 @@ section .content-mgmt {
 }
 
 section .content-selected {
-  display: block;
   visibility: visible;
-}
-
-section .info-card .project-content {
-  background-color: #93c572;
-  /* width: 600px; */
-  border-radius: 10px;
-  width: 100%;
-
-  /* margin: 10px; */
-  padding: 0px 20px;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   justify-content: center;
-  align-items: center;
+  align-content: center;
+
 }
 
 section .project {
-  /* width: 500px; */
+  width: 400px;
   /* height: 180px; */
   border-radius: 10px;
   background-color: #fffef4;
