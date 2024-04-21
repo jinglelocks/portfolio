@@ -223,7 +223,6 @@ section .project {
 }
 
 section .project img {
-  background-color: grey;
   border: 3px solid rgb(58, 58, 58);
   border-radius: 5px;
   width: 120px;
@@ -236,9 +235,14 @@ section .project img:hover {
   transform: scale(1.5);
 }
 
+section .project .tags {
+  font-size: 8px;
+}
+
 section .project .project-info {
   text-align: left;
   padding: 10px;
+  font-size: 12px;
 }
 
 /* Footer section ---- */
@@ -247,7 +251,9 @@ footer {
   grid-column: 1 / -1;
   grid-row: -1;
 
-  font-size: 8px;
+  font-size: 10px;
+
+  padding: 5px;
 }
 
 /* Media queries for responsive design ---- */
