@@ -159,7 +159,7 @@ section .info-card .project-content {
   width: 100%;
 
   /* margin: 10px; */
-  padding: 0px 20px;
+  padding: 20px 0px;
 
   display: flex;
   flex-direction: column;
@@ -200,7 +200,7 @@ section .content-selected {
 }
 
 section .project {
-  width: 400px;
+  width: 350px;
   /* height: 180px; */
   border: 1px solid #93c572;
   border-radius: 10px;
@@ -218,6 +218,11 @@ section .project img {
   width: 120px;
   height: 120px;
   margin: 10px;
+  transition: 0.3s;
+}
+
+section .project img:hover {
+  transform: scale(1.5);
 }
 
 section .project .project-info {
@@ -273,5 +278,9 @@ footer {
 
   section {
     margin: 0px 10px;
+  }
+
+  section .project {
+    width: 300px;
   }
 }
