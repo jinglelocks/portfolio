@@ -151,6 +151,16 @@ section .btn-selected {
   transition: 0.5s;
 }
 
+section .info-card {
+  text-align: left;
+}
+
+section .info-card h2 img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+}
+
 section .info-card .project-content {
   /* background-color: #93c572; */
   /* width: 600px; */
@@ -200,10 +210,11 @@ section .content-selected {
 }
 
 section .project {
-  width: 350px;
+  width: 430px;
   /* height: 180px; */
   border: 1px solid #93c572;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(224, 221, 221);
   background-color: #fffef4;
   /* margin: 10px; */
 
