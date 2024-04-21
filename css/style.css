@@ -23,7 +23,7 @@ aside {
   background-color: #93c572;
   grid-row: 2;
   border-radius: 10px;
-  margin: 20px 10px;
+  margin: 10px 10px;
   padding: 10px;
 }
 
@@ -101,17 +101,19 @@ section {
   background-color: #93c572;
   grid-row: 2;
   border-radius: 10px;
-  margin: 20px 10px;
+  margin: 10px 10px;
   padding: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
+
+  gap: 10px;
 }
 
 section .info-card {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   background-color: #fffef4;
   border-radius: 10px;
   padding: 10px;
@@ -127,7 +129,7 @@ section .category-buttons {
   min-width: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 60px
+  grid-template-rows: 60px;
   justify-content: center;
 }
 
