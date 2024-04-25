@@ -154,13 +154,14 @@ section .btn-selected {
 }
 
 section .info-card {
-  text-align: left;
+  text-align: justify;
 }
 
 section .info-card h2 img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 100px;
+  /* box-shadow: 2px 2px 5px grey; */
 }
 
 section .info-card .project-content {
@@ -181,6 +182,9 @@ section .info-card .project-content {
   align-items: center;
 }
 
+section .info-card .project-content h3 {
+  font-size: 12px;
+}
 section .content-web-dev {
   display: none;
   visibility: hidden;
@@ -208,7 +212,6 @@ section .content-selected {
 
   justify-content: center;
   align-content: center;
-
 }
 
 section .project {
