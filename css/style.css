@@ -242,6 +242,10 @@ section .project img:hover {
   transform: scale(1.5);
 }
 
+section .project p {
+  margin-top: 5px
+}
+
 section .project .tags {
   font-size: 8px;
 }
